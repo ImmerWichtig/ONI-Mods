@@ -9,7 +9,7 @@ namespace InfiniteSourceSink
         public const string DisplayName = "Infinite Liquid Source";
         public const string Description = "Materializes liquid from the void.";
         public const string Effect = "Where is all the liquid coming from?";
-        public const string TemperatureSliderTitle = "Liquid ouput temperature";
+        public const string TemperatureSliderTitle = "Liquid output temperature";
         public const string TemperatureSliderTooltip = "Liquid output temperature";
 
         public override BuildingDef CreateBuildingDef()
@@ -20,11 +20,11 @@ namespace InfiniteSourceSink
                 height: 2,
                 anim: "liquid_source_kanim",
                 hitpoints: BUILDINGS.HITPOINTS.TIER2,
-                construction_time: BUILDINGS.CONSTRUCTION_TIME_SECONDS.TIER4,
-                construction_mass: BUILDINGS.CONSTRUCTION_MASS_KG.TIER4,
+                construction_time: BUILDINGS.CONSTRUCTION_TIME_SECONDS.TIER0,
+                construction_mass: BUILDINGS.CONSTRUCTION_MASS_KG.TIER0,
                 construction_materials: MATERIALS.ALL_METALS,
                 melting_point: BUILDINGS.MELTING_POINT_KELVIN.TIER0,
-                build_location_rule: BuildLocationRule.Anywhere,
+                build_location_rule: BuildLocationRule.Conduit,
                 decor: BUILDINGS.DECOR.PENALTY.TIER1,
                 noise: NOISE_POLLUTION.NOISY.TIER4,
                 0.2f
